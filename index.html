@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Task 3</title>
+</head>
+<body>
+	<script>
+		// declare function accepting an integer parameter
+		function check (x){
+			let number=[];
+
+			// check for the divisibility of the parameter
+			for (i=1;i<=x;i++){
+				if (i%2==0 && i%3==0 && i%5==0){
+					number.push("yu-gi-oh");
+				}
+
+				else if (i%2==0 && i%3==0){
+					number.push("yu-gi");
+				}
+
+				else if (i%2==0 && i%5==0){
+					number.push("yu-oh");
+				}
+
+				else if (i%3==0 && i%5==0){
+					number.push("gi-oh");
+				}
+
+				else if (i%2==0){
+					number.push("yu");
+				}
+
+				else if (i%3==0){
+					number.push("gi");
+				}
+
+				else if (i%5==0){
+					number.push("oh");
+				}
+
+				else {
+					number.push(i);
+				}
+			}
+
+			//console log
+			console.log(number);
+			// return the array containing all numbers
+			return number;
+		}
+		//call function with the given argumeny
+		check(100);
+		check(20);
+	</script>
+
+</body>
+</html>
